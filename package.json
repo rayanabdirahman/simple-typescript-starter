@@ -1,0 +1,20 @@
+{
+  "name": "simple-typescript-starter",
+  "version": "1.0.0",
+  "description": "A basic typescript app starter",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc -p ./",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  }
+}
